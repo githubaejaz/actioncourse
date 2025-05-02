@@ -9,7 +9,7 @@ on:
 env:
   DOTNET_VERSION: '8.0.x'
   AZURE_WEBAPP_NAME: HealiusWebAPI              # Replace with your Azure Web App name
-  AZURE_WEB_APP_PACKAGE_PATH: './publish'       # Output folder
+  AZURE_WEB_APP_PACKAGE_PATH: '.'       # Output folder
 
 jobs:
   build:
