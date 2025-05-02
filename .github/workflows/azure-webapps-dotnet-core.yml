@@ -34,7 +34,7 @@ jobs:
         run: dotnet test --no-build --verbosity normal
 
       - name: Publish the application
-        run: dotnet publish ./DemoCICD/DemoCICD.csproj --configuration Release --output ${{ env.AZURE_WEB_APP_PACKAGE_PATH }}
+        run: dotnet publish ./DemoCICD.csproj --configuration Release --output ${{ env.AZURE_WEB_APP_PACKAGE_PATH }}
 
       - name: Verify publish output (debug step)
         run: ls -laR ${{ env.AZURE_WEB_APP_PACKAGE_PATH }}
