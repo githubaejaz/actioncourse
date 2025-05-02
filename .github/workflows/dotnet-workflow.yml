@@ -8,9 +8,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
-workflow_dispatch:
-#manually work flow execution
+  workflow_dispatch:
+  # manualy execution workflow
 
 jobs:
   build-and-release:
